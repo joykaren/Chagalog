@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) Rein Sano Systems, Inc - All Rights Reserved
+Unauthorized copying of this file, via any medium is strictly prohibited
+Proprietary and confidential
+Written by Regine Bautista <regineramirezbautista@gmail.com>, November 2014
+-->
+<html>
+    <head>
+        <title> YouthCon </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <link rel="icon" href="img/SK.png">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" type="text/css"/>   
+        <link rel="stylesheet" href="../css/bootstrap/bootstrap-theme.min.css" type="text/css" >
+        <link rel="stylesheet" href="../css/global.css" type="text/css"/> 
+        
+        <script>
+            function pwdValidate() {
+            var pass1 = document.getElementById("pwd").value;
+            var pass2 = document.getElementById("confirmPwd").value;
+            var ok = true;
+            if (pass1 != pass2) {
+                alert("Passwords Do not match");
+                //document.getElementById("pass1").style.borderColor = "#E34234";
+                //document.getElementById("pass2").style.borderColor = "#E34234";
+                ok = false;
+            }
+            else {
+                alert("Passwords Match!!!");
+            }
+            return ok;
+            }
+         </script>
+        
+    </head>
+     
+    <body id="loginPage"> 
+               
+        <div class="container">    
+        
+        <!-- log in form -->
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign In</div>
+                       
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body" >
+
+                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                            
+                        <form id="loginform" class="form-horizontal" role="form" method ="post" action="loginProcess.php">
+                                    
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">                                        
+                            </div>
+                                
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                            </div>
+                                    
+                            <div style="margin-top:10px" class="form-group">
+
+                                  <!--  Log in button -->
+                                  <div class="col-sm-12 controls" >
+                                     <a id="btn-login" name="login" href="#" class="btn btn-success btn-block">Log in  </a>                                       
+                                  </div>
+                                  
+                                  <div class="col-md-offset-3 col-md-3">
+                                    <button id="btn-login" type="submit" name="login" class="btn btn-info btn-block"><i class="icon-hand-right"></i> &nbsp Log in</button>
+                                  </div>
+                                  <div style="float:right; font-size: 80%; position: relative; top:5px; left: -110px"><a href="#">Forgot password?</a></div>
+
+                            </div>
+
+
+                           <div class="form-group">
+                                    <div class="col-md-12 control">
+                                        <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                             Don't have an account? 
+                                    <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+                                        Sign Up Here
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>    
+                            
+                        </form>     
+                    </div>                     
+                </div>  
+        </div> <!-- end of log in form -->
+ 
+             
+             
+        <!-- sign up box-->
+        <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">Sign Up</div>
+                            <div style="float:right; font-size: 85%; position: relative; top:-10px">
+                                <a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a>
+                            </div>
+                        </div>  
+                        <div class="panel-body" >
+                            <form id="signupform" class="form-horizontal" role="form" method="post" onSubmit="return pwdValidator()" action="signupProcess.php" >
+                                
+                                <div id="signupalert" style="display:none" class="alert alert-danger">
+                                    <p>Error:</p>
+                                    <span></span>
+                                </div>
+                                    
+                           
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Choose membership:</label>
+                    
+                                <div class="col-md-9">
+                                        <select   class="form-control"  name="category"> 
+                                                <option value="SKChairman"> SK Chairman </option>
+                                                <option value="SKMember"> SK Member </option> 
+                                        </select>
+                                </div>
+                                <br/> <br/> 
+                           
+
+                                <label for="username" class="col-md-3 control-label">Username</label>
+                                <div class="col-md-9" id="resolutionForMd6">
+                                    <input type="text" class="form-control" name="username" placeholder="Username">
+                                </div>
+                                
+                                <label for="email" class="col-md-3 control-label">Email</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="email" placeholder="Email Address">
+                                </div>
+
+                                <label for="firstname" class="col-md-3 control-label">First Name</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                                </div>
+
+                                <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                </div>
+                                                                
+                                <label for="barangay" class="col-md-3 control-label">Barangay</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="barangay" placeholder="Barangay">
+                                </div>
+                                                                
+                                <label for="city" class="col-md-3 control-label">City</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="city" placeholder="City">
+                                </div>
+
+                                <label for="password" class="col-md-3 control-label">Password</label>
+                                <div class="col-md-9">
+                                    <input type="password" class="form-control" name="pwd" placeholder="Password">
+                                </div>
+                                
+                                <label for="password" class="col-md-3 control-label">Confirm Password:</label>
+                                <div class="col-md-9">
+                                    <input type="password" class="form-control" name="confirmPwd" placeholder="Password" >
+                                </div> <br/>
+                                
+                                
+                                <!-- Sign up button-->                                        
+                                <div class="col-md-offset-3 col-md-3">
+                                    <button id="btn-signup" type="submit" name="signup" class="btn btn-info btn-block"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                </div>
+                            </div> <!-- end of form group -->
+                                
+                                
+                            </form>
+                        </div>
+                    </div>
+
+         </div> <!-- end of sign up form --> 
+        
+    </div> <!-- ./container -->
+     
+        <script src="../js/jquery/jquery.min.js"></script>
+        <script src="../js/bootstrap/bootstrap.min.js"></script>
+        
+    </body>
+</html>
