@@ -1,0 +1,93 @@
+/*
+Copyright (C) Rein Sano Systems, Inc - All Rights Reserved
+Unauthorized copying of this file, via any medium is strictly prohibited
+Proprietary and confidential
+Written by Regine Bautista <regineramirezbautista@gmail.com>, November 2014
+*/
+
+/* 
+    Created on : Nov 15, 2014, 3:01:28 PM
+    Author     : Regine Bautista
+*/
+
+
+
+/* /////////////////////////////////
+	    BODY TEXT
+///////////////////////////////// */
+
+ 
+.opening-head {
+  position: absolute; 
+  top: 30px;
+  left: 290px;
+  padding: 40px 15px;
+  text-align: center;
+}
+
+/* /////////////////////////////////
+	FORM ELEMENTS
+///////////////////////////////// */
+
+textarea{
+    resize:none;
+}
+ 
+.control-group {
+     position: absolute; 
+     left: 190px; 
+     top: 200px
+}
+
+#focusedInput{
+     width: 370px;
+     height: 158px
+}
+
+#transOutputPosition{
+    position: absolute; 
+    left: 465px; 
+    top: 65px; 
+}
+
+#transOutput{
+    width: 375px; 
+    height: 158px
+}
+
+
+#translateBtn{
+    position: absolute;
+    left: 375px;
+    top: 130px
+}
+
+/* extra buttons group */
+
+#btn_voice{
+    position: absolute;
+    left: 842px;
+    top: 65px
+}
+#btn_upvote{
+    position: absolute;
+    left: 842px;
+    top: 98px
+ }
+ #btn_downvote{
+    position: absolute;
+    left: 842px;
+    top: 130px
+ }
+ 
+  #btn_copy{
+    position: absolute;
+    left: 842px;
+    top: 162px
+ }
+ 
+ #btn_search{
+    position: absolute;
+    left: 842px;
+    top: 193px
+}

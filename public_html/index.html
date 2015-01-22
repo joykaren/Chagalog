@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) Rein Sano Systems, Inc - All Rights Reserved
+Unauthorized copying of this file, via any medium is strictly prohibited
+Proprietary and confidential
+Written by Regine Bautista <regineramirezbautista@gmail.com>, November 2014
+-->
+
+<html lang="en">
+    <head>
+       
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Chabacano to Tagalog Online Translator">
+        <meta name="author" content="Regine Bautista">
+
+        <title>Chagalog: Chabacano - Tagalog Online Translator</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" href="css/bootstrap/bootstrap-responsive.min.css" type="text/css"/>    
+        <link rel="stylesheet" href="css/bootstrap/bootstrap-combined.min.css" type="text/css" >
+        <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css" type="text/css" >
+        <link rel="stylesheet" href="css/global.css" type="text/css"/> 
+
+    </head>
+    <body>
+        
+               
+        <p>
+         note: <br/>
+         responsiveness <br/>
+         rate translation <br/>
+         auto translate <br/>
+         voice translation module <br/>
+         tooltip <br/>
+         footer <br/>
+         share buttons <br/>
+         analytics for admin <br/>
+         
+        </p>
+        
+        <!-- Chagalog banner -->    
+        <div class="container">
+            <div class="opening-head">
+                <h3>Chagalog: Chabacano to Tagalog Online Translator</h3>
+            </div>
+               
+        
+        </div><!-- /.Chagalog banner -->
+        
+        <!-- form elements -->
+       
+            <div class="control-group">
+                    <label class="control-label">Choose dialect:</label>
+                    
+                    <div class="controls">
+                            <select class="span3 m-wrap" name="category"> 
+                                    <option value="Chabacano">Chabacano</option>
+                                    <option value="Tagalog">Tagalog</option> 
+                            </select>
+                    </div>
+                    
+                    <div class="controls">
+                                <textarea class="focused form-control" maxlength="250" rows="5" id="focusedInput"></textarea>
+                               
+                    </div>
+                   
+                    <div id="transOutputPosition">
+                            <div class="controls">
+                                       <span class="input-xlarge uneditable-input span4" id="transOutput"> Translated text </span>
+                            </div>
+                    </div>
+                    <div id="translateBtn">
+                            <button class="btn"> Translate </button>
+                    </div>
+                    
+                    <div id="extrabtns_group"> 
+                        <!-- search button -->
+                        <button id="btn_search" type="button" class="btn btn-default btn-lg">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+
+                        <!-- upvote button -->
+                        <button id="btn_upvote" type="button" class="btn btn-default btn-lg">
+                            <span class="glyphicon glyphicon-thumbs-up"></span>
+                        </button>
+
+                        <!-- downvote button -->
+                        <button id="btn_downvote" type="button" class="btn btn-default btn-lg">
+                            <span class="glyphicon glyphicon-thumbs-down"></span>
+                        </button>
+
+                        <!-- voice translation button -->
+                        <button id="btn_voice" type="button" class="btn btn-default btn-lg">
+                            <span class="glyphicon glyphicon-volume-up"></span>
+                        </button>
+
+                        <!-- copy button -->
+                        <button id="btn_copy" type="button" class="btn btn-default btn-lg">
+                            <span class="glyphicon glyphicon-floppy-disk"></span>
+                        </button>
+                        
+<!--                         Facebook share 
+                       <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button"></div>
+                       
+                         Google Plus share 
+                        <div class="g-plus" data-action="share"  ></div>
+                        
+                         Twitter share 
+                        <a class="twitter-share-button"
+                            href="https://twitter.com/share"
+                            data-url="https://dev.twitter.com/web/tweet-button"
+                            data-via="your_screen_name"
+                            data-text="Checking out this page about the Tweet Button"
+                            data-related="twitterdev:Twitter Developer Relations"
+                            data-count="vertical">
+                        </a>
+                        -->
+                    </div> <!-- /. extra buttons-->
+                    
+                   
+                    
+            </div> <!-- end of form elements -->
+            
+        <!-- Facebook's JavaScript SDK -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+      
+        <!-- Google plus share JS -->
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        
+        <!-- Twitter share JS -->
+        <script type="text/javascript">
+        window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+        </script>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <script src="js/jquery/jquery.min.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        
+    </body>
+</html>

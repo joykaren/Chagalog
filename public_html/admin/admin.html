@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) Rein Sano Systems, Inc - All Rights Reserved
+Unauthorized copying of this file, via any medium is strictly prohibited
+Proprietary and confidential
+Written by Regine Bautista <regineramirezbautista@gmail.com>, November 2014
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Chabacano to Tagalog Online Translator">
+        <meta name="author" content="Regine Bautista">
+        <title>Chagalog: Chabacano - Tagalog Online Translator</title>
+        
+        <!-- bootstrap CSS -->
+         <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+         <link href="../css/bootstrap/bootstrap-responsive.min.css" rel="stylesheet" media="screen">         
+         <link rel="stylesheet" href="../css/bootstrap/bootstrap-combined.min.css" type="text/css">
+         <link href="../css/styles.css" rel="stylesheet" media="screen">  
+
+
+         
+         <script src="../js/vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+
+    </head>
+
+    <body id="login">
+        <div class="container">
+          <form class="form-signin" method ="post" action="loginProcess.php"  >              
+              
+            <h2 class="form-signin-heading">Please sign in</h2>
+            <input name="username" type="text" class="input-block-level" placeholder="Username or E-mail" required autofocus>
+            <input name="password" type="password" class="input-block-level" placeholder="Password" required>
+            <label class="checkbox">
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+            <button name="login" class="btn btn-primary" type="submit">Sign in</button>
+            
+          </form>
+        </div> <!-- /container -->
+        
+        <script src="../js/jquery/jquery-1.9.1.min.js"></script>
+        <script src="../js/bootstrap/bootstrap.min.js"></script>
+    </body>
+    
+</html>
