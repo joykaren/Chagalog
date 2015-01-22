@@ -3,7 +3,8 @@
 Copyright (C) Rein Sano Systems, Inc - All Rights Reserved
 Unauthorized copying of this file, via any medium is strictly prohibited
 Proprietary and confidential
-Written by Regine Bautista <regineramirezbautista@gmail.com>, January 2015
+Written by Regine Bautista <regineramirezbautista@gmail.com>, November 2014
+
 -->
   <?php
         
