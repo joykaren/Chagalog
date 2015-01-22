@@ -192,7 +192,8 @@
         <div id="page-wrapper">
 
             <div class="container-fluid">
-                    
+                    <div class="row">
+                    <div class="col-lg-12">
                        
                         <div id="tabs">
                         <ul>
@@ -247,7 +248,8 @@
   
 
                     </div> <!-- tabs -->
-        
+                    </div> <!-- col -->
+                    </div> <!-- row -->
     </div> <!-- container -->
    </div> <!-- page-wrapper-->
     
